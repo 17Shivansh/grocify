@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container min-h-screen bg-[url('./img/Image.png')] bg-center bg-cover lg:px-28 py-5 relative px-5">
+  
+        <nav class="flex justify-between">
+            <img src="./img/logo.png" alt="" class="lg:w-40 cursor-pointer w-20">
+            <div class="lg:flex items-center hidden"> 
+          <ul class="text-white text-center flex-1 ">
+            <li class="px-5 inline-block"><a href="#" class="px-2">Home</a></li>
+            <li class="px-5 inline-block"><a href="#" class="px-2">About</a></li>
+            <li class="px-5 inline-block"><a href="#" class="px-2">Features</a></li>
+            <li class="px-5 inline-block"><a href="#" class="px-2">Contact</a></li>
+          </ul>
+          
+        </div>
+        <img src="./img/cart.png" alt="" class="w-8 cursor-pointer hidden lg:flex">
+        
+        <!-- MObile Nav-bar -->
+        <div class="lg:hidden flex justify-between">
+
+            <div class="text-2xl  text-white font-bold cursor-pointer" id="hamburger">&#9776;</div>
+
+            <ul class="flex flex-col gap-5 min-h-screen fixed bg-yellow-400 top-0 left-0 p-10 -translate-x-full transition-all font-bold" id="mobile-nav">
+
+                <li class="px-5 inline-block"><a href="#" class="px-2">Home</a></li>
+                <li class="px-5 inline-block"><a href="#" class="px-2">About</a></li>
+                <li class="px-5 inline-block"><a href="#" class="px-2">Features</a></li>
+                <li class="px-5 inline-block"><a href="#" class="px-2">Contact</a></li>
+              </ul>
+        </div>
+        </nav>
+
+
+        <div class="text-white lg:mt-48 mt-10 max-w-lg">
+            <h1 class="lg:text-6xl text-3xl font-semibold  lg:leading-normal leading-normal">Groceries<br> delivery in <span class="font-light">15 mins</span></h1>
+            <p class="mt-5 text-xs lg:text-base lg:mt-0">Grocify offer a wide range products, including fresh products, meats, dairy, baked goods and non-perishable items.</p>
+          </div>
+
+          <img src="./img/grocery-image.png" alt="" class="w-full xl:w-1/2 xl:absolute bottom-0 right-20 lg:hidden">
+
+          <div class="mt-10 flex flex-col lg:flex-row items-center gap-y-5 mx-auto">
+            <a href="#" class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent">Order Now</a>
+            <a href="#" class="text-white">Download Apps <span class="text-lg inline-block rotate-90">&#10148;</span></a>
+          </div>
+
+          <img src="./img/grocery-image.png" alt="" class="w-full xl:w-1/2 xl:absolute bottom-0 right-20 hidden lg:flex">
+
+    </div>
+    
+
+
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-nav');
+
+        hamburger.addEventListener('click' ,() =>{
+            mobileMenu.classList.toggle('-translate-x-full')
+        })
+    </script>
+</body>
+</html>
